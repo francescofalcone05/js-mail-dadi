@@ -19,31 +19,31 @@ sendButton.addEventListener('click', function() {
 //genera un numero random da 1 a 6 per il player
 let player = (Math.floor(Math.random ()*6) +1)
 console.log(player)
-plNr.append(player)
+plNr.innerHTML= (player)
 
 //genera un numero random da 1 a 6 per il Computer
 let computer = (Math.floor(Math.random ()*6) +1)
 console.log(computer)
-cpNr.append(computer)
+cpNr.innerHTML= (computer)
 
 
 //uso if, per stabilire il vincitore e stampare in pagina i risultati
 if (player < computer) {
 
     console.log(`vince computer`)
-    wiNa.append('Computer')
+    wiNa.innerHTML= ('Computer')
 
 
 } else if (player > computer) {
 
     console.log(`vince player`)
-    wiNa.append('Player')
+    wiNa.innerHTML= ('Player')
 
 
 }else {
 
     console.log(`pari`)
-    wiNa.append('Pari')
+    wiNa.innerHTML= ('Pari')
 
 
 }
