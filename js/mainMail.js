@@ -16,8 +16,8 @@ console.log(contenitore)
 //chiedo il nome al cliente 
 let userName = prompt(`inserisci il tuo nome per verificare l'accesso`)
 
-//verifico se il userName=qualcosa in contenitore
-if (userName == contenitore[0]){
+//verifico se il userName=qualcosa in contenitore senza ciclo
+/*if (userName == contenitore[0]){
 
     alert(`puoi accedere`)
 
@@ -38,9 +38,27 @@ if (userName == contenitore[0]){
 } else {
 
     alert(`non puoi accedere`)
-}
+}*/
+
 
 /* nel caso in cui il nome utente corrispondera' ad uno dei nomi dell'array, 
 ricevera' un alert con scritto che puo' accedere
 mentre se non dovesse corrispondere a nessuno dei nomi in array,
 ricevera' un alert con scritto che non puo' accedere */
+
+
+
+//verifico con il ciclo 
+for (let number = 0; number < contenitore.length; number++) {
+
+    if (userName == contenitore[number]){
+
+    alert(`puoi accedere`)
+
+    } else {
+
+        alert(`non puoi accedere`)
+
+    }
+
+}
